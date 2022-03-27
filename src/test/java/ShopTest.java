@@ -1,6 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
 import products.ProductType;
+import products.instruments.InstrumentType;
 import products.instruments.electronic.TR909;
 import products.instruments.string.Guitar;
 import products.instruments.wind.Flute;
@@ -18,9 +19,9 @@ public class ShopTest {
 
     @Before
     public void setUp(){
-        guitar = new Guitar(ProductType.INSTRUMENT, 50, 100, "wood", "red", "string", 6);
-        tr909 = new TR909(ProductType.INSTRUMENT,400, 1500, "plastic", "white", "electronic", 40);
-        flute = new Flute(ProductType.INSTRUMENT, 10, 40, "acryclic", "black", "wind", 7);
+        guitar = new Guitar(ProductType.INSTRUMENT, 50, 100, "wood", "red", InstrumentType.STRING, 6);
+        tr909 = new TR909(ProductType.INSTRUMENT,400, 1500, "plastic", "white", InstrumentType.ELECTRONIC, 40);
+        flute = new Flute(ProductType.INSTRUMENT, 10, 40, "acryclic", "black", InstrumentType.WIND, 7);
         drumsticks = new Misc(ProductType.DRUMSTICKS, 1, 5);
         shop = new Shop("happy music");
         shop.addToStock(guitar);

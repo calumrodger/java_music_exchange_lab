@@ -2,12 +2,13 @@ package products.instruments.brass;
 
 import products.ProductType;
 import products.instruments.Instrument;
+import products.instruments.InstrumentType;
 
 public class Trumpet extends Instrument {
 
     private int numberOfValves;
 
-    public Trumpet(ProductType type, int costPrice, int salePrice, String material, String colour, String instrumentType, int numberOfValves) {
+    public Trumpet(ProductType type, int costPrice, int salePrice, String material, String colour, InstrumentType instrumentType, int numberOfValves) {
         super(type, costPrice, salePrice, material, colour, instrumentType);
         this.numberOfValves = numberOfValves;
     }

@@ -1,6 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
 import products.ProductType;
+import products.instruments.InstrumentType;
 import products.instruments.string.Guitar;
 
 import static org.junit.Assert.assertEquals;
@@ -11,12 +12,17 @@ public class GuitarTest {
 
     @Before
     public void setUp(){
-        guitar = new Guitar(ProductType.INSTRUMENT, 50, 100, "wood", "red", "string", 6);
+        guitar = new Guitar(ProductType.INSTRUMENT, 50, 100, "wood", "red", InstrumentType.STRING, 6);
     }
 
     @Test
     public void canGetProductType(){
         assertEquals(ProductType.INSTRUMENT, guitar.getType());
+    }
+
+    @Test
+    public void canGetInstrumentType(){
+        assertEquals(InstrumentType.STRING, guitar.getInstrumentType());
     }
 
     @Test

@@ -7,9 +7,9 @@ public abstract class Instrument extends Product {
 
     private String material;
     private String colour;
-    private String instrumentType;
+    private InstrumentType instrumentType;
 
-    public Instrument(ProductType type, int costPrice, int salePrice, String material, String colour, String instrumentType) {
+    public Instrument(ProductType type, int costPrice, int salePrice, String material, String colour, InstrumentType instrumentType) {
         super(type, costPrice, salePrice);
         this.material = material;
         this.colour = colour;
@@ -32,11 +32,11 @@ public abstract class Instrument extends Product {
         this.colour = colour;
     }
 
-    public String getInstrumentType() {
+    public InstrumentType getInstrumentType() {
         return instrumentType;
     }
 
-    public void setInstrumentType(String instrumentType) {
+    public void setInstrumentType(InstrumentType instrumentType) {
         this.instrumentType = instrumentType;
     }
 }
