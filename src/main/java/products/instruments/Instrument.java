@@ -1,6 +1,7 @@
 package products.instruments;
 
 import products.Product;
+import products.ProductType;
 
 public abstract class Instrument extends Product {
 
@@ -8,8 +9,8 @@ public abstract class Instrument extends Product {
     private String colour;
     private String instrumentType;
 
-    public Instrument(int costPrice, int salePrice, String material, String colour, String instrumentType) {
-        super(costPrice, salePrice);
+    public Instrument(ProductType type, int costPrice, int salePrice, String material, String colour, String instrumentType) {
+        super(type, costPrice, salePrice);
         this.material = material;
         this.colour = colour;
         this.instrumentType = instrumentType;

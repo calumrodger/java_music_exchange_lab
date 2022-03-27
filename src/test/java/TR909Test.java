@@ -1,5 +1,6 @@
 import org.junit.Before;
 import org.junit.Test;
+import products.ProductType;
 import products.instruments.electronic.TR909;
 
 import static org.junit.Assert.assertEquals;
@@ -10,7 +11,7 @@ public class TR909Test {
 
     @Before
     public void setUp(){
-        tr909 = new TR909(400, 1500, "plastic", "white", "electronic", 40);
+        tr909 = new TR909(ProductType.INSTRUMENT,400, 1500, "plastic", "white", "electronic", 40);
     }
 
     @Test

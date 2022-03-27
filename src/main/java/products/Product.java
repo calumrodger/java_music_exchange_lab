@@ -2,12 +2,22 @@ package products;
 
 public abstract class Product implements ISell {
 
+    private ProductType type;
     private int costPrice;
     private int salePrice;
 
-    public Product(int costPrice, int salePrice) {
+    public Product(ProductType type, int costPrice, int salePrice) {
+        this.type = type;
         this.costPrice = costPrice;
         this.salePrice = salePrice;
+    }
+
+    public ProductType getType() {
+        return type;
+    }
+
+    public void setType(ProductType type) {
+        this.type = type;
     }
 
     public int getCostPrice() {

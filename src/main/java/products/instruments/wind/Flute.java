@@ -1,13 +1,14 @@
 package products.instruments.wind;
 
+import products.ProductType;
 import products.instruments.Instrument;
 
 public class Flute extends Instrument {
 
     private int numberOfHoles;
 
-    public Flute(int costPrice, int salePrice, String material, String colour, String instrumentType, int numberOfHoles) {
-        super(costPrice, salePrice, material, colour, instrumentType);
+    public Flute(ProductType type, int costPrice, int salePrice, String material, String colour, String instrumentType, int numberOfHoles) {
+        super(type, costPrice, salePrice, material, colour, instrumentType);
         this.numberOfHoles = numberOfHoles;
     }
 

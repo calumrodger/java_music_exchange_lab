@@ -1,13 +1,14 @@
 package products.instruments.string;
 
+import products.ProductType;
 import products.instruments.Instrument;
 
 public class Piano extends Instrument {
 
     private int numberOfKeys;
 
-    public Piano(int costPrice, int salePrice, String material, String colour, String instrumentType, int numberOfKeys) {
-        super(costPrice, salePrice, material, colour, instrumentType);
+    public Piano(ProductType type, int costPrice, int salePrice, String material, String colour, String instrumentType, int numberOfKeys) {
+        super(type, costPrice, salePrice, material, colour, instrumentType);
         this.numberOfKeys = numberOfKeys;
     }
 

@@ -1,5 +1,6 @@
 package products.instruments.string;
 
+import products.ProductType;
 import products.instruments.IPlay;
 import products.instruments.Instrument;
 
@@ -7,8 +8,8 @@ public class Guitar extends Instrument implements IPlay {
 
     private int numberOfStrings;
 
-    public Guitar(int costPrice, int salePrice, String material, String colour, String instrumentType, int numberOfStrings) {
-        super(costPrice, salePrice, material, colour, instrumentType);
+    public Guitar(ProductType type, int costPrice, int salePrice, String material, String colour, String instrumentType, int numberOfStrings) {
+        super(type, costPrice, salePrice, material, colour, instrumentType);
         this.numberOfStrings = numberOfStrings;
     }
 

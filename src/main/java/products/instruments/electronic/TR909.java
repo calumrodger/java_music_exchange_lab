@@ -1,13 +1,14 @@
 package products.instruments.electronic;
 
+import products.ProductType;
 import products.instruments.Instrument;
 
 public class TR909 extends Instrument {
 
     private int numberOfKnobs;
 
-    public TR909(int costPrice, int salePrice, String material, String colour, String instrumentType, int numberOfKnobs) {
-        super(costPrice, salePrice, material, colour, instrumentType);
+    public TR909(ProductType type, int costPrice, int salePrice, String material, String colour, String instrumentType, int numberOfKnobs) {
+        super(type, costPrice, salePrice, material, colour, instrumentType);
         this.numberOfKnobs = numberOfKnobs;
     }
 
