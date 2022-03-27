@@ -1,8 +1,9 @@
 package products.instruments.string;
 
+import products.instruments.IPlay;
 import products.instruments.Instrument;
 
-public class Guitar extends Instrument {
+public class Guitar extends Instrument implements IPlay {
 
     private int numberOfStrings;
 
@@ -17,5 +18,9 @@ public class Guitar extends Instrument {
 
     public void setNumberOfStrings(int numberOfStrings) {
         this.numberOfStrings = numberOfStrings;
+    }
+
+    public String play(){
+        return "strum strum strum";
     }
 }
