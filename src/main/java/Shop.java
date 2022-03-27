@@ -39,4 +39,12 @@ public class Shop {
     public int getStockSize(){
         return this.stock.size();
     }
+
+    public int calculateTotalMarkup() {
+        int total = 0;
+        for (Product product : this.stock){
+            total += product.calculateMarkup();
+        }
+        return total;
+    }
 }
