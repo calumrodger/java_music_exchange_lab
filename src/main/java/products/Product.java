@@ -1,6 +1,6 @@
 package products;
 
-public abstract class Product {
+public abstract class Product implements ISell {
 
     private int costPrice;
     private int salePrice;
@@ -24,5 +24,9 @@ public abstract class Product {
 
     public void setSalePrice(int salePrice) {
         this.salePrice = salePrice;
+    }
+
+    public int calculateMarkup(){
+        return salePrice -= costPrice;
     }
 }
